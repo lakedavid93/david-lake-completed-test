@@ -9,6 +9,7 @@
  * [Investigating Failed Scenarios](#investigating-failed-scenarios)
  
 <br>
+
 ---
 <br>
 
@@ -41,45 +42,64 @@ bundle install
 The expected list of ruby gems and their dependencies is:
 
 ```
-Using builder 3.2.3
-Using ffi 1.9.18
-Using coderay 1.1.1
-Using colorize 0.8.1
-Using gherkin 4.1.3
-Using cucumber-wire 0.0.1
-Using diff-lcs 1.3
-Using multi_json 1.12.1
-Using multi_test 0.1.2
-Using method_source 0.8.2
-Using mini_portile2 2.3.0
-Using mysql2 0.4.10
-Using slop 3.6.0
-Using rspec-support 3.6.0
-Using rubyzip 1.2.1
-Using websocket 1.2.4
-Using bundler 1.14.6
-Using childprocess 0.7.0
-Using cucumber-core 1.5.0
-Using nokogiri 1.8.1
-Using pry 0.10.4
-Using rspec-core 3.6.0
-Using rspec-expectations 3.6.0
-Using rspec-mocks 3.6.0
-Using selenium-webdriver 3.4.0
-Using cucumber 2.4.0
-Using rubyXL 3.3.26
-Using rspec 3.6.0
-Bundle complete! 9 Gemfile dependencies, 28 gems now installed.
+Fetching rake 12.3.2
+Installing rake 12.3.2
+Fetching builder 3.2.3
+Installing builder 3.2.3
+Using bundler 2.0.2
+Fetching c21e 1.1.9
+Installing c21e 1.1.9
+Fetching childprocess 1.0.1
+Installing childprocess 1.0.1 with native extensions
+Fetching coderay 1.1.2
+Installing coderay 1.1.2
+Fetching gherkin3 3.1.2
+Installing gherkin3 3.1.2
+Fetching cucumber-core 1.3.1
+Installing cucumber-core 1.3.1
+Fetching cucumber-wire 0.0.1
+Installing cucumber-wire 0.0.1
+Fetching diff-lcs 1.3
+Installing diff-lcs 1.3
+Fetching event-bus 0.1.0
+Installing event-bus 0.1.0
+Fetching multi_json 1.13.1
+Installing multi_json 1.13.1
+Fetching multi_test 0.1.2
+Installing multi_test 0.1.2
+Fetching cucumber 2.2.0
+Installing cucumber 2.2.0
+Fetching google-protobuf 3.7.0 (universal-darwin)
+Installing google-protobuf 3.7.0 (universal-darwin)
+Fetching cucumber-messages 2.1.2
+Installing cucumber-messages 2.1.2
+Fetching gherkin 6.0.17
+Installing gherkin 6.0.17
+Fetching method_source 0.9.2
+Installing method_source 0.9.2
+Fetching pry 0.12.2
+Installing pry 0.12.2
+Fetching rspec-support 3.8.2
+Installing rspec-support 3.8.2
+Fetching rspec-expectations 3.8.4
+Installing rspec-expectations 3.8.4
+Fetching rubyzip 1.2.3
+Installing rubyzip 1.2.3
+Fetching selenium-webdriver 3.142.3
+Installing selenium-webdriver 3.142.3
+Bundle complete! 5 Gemfile dependencies, 23 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
 ```
 
 The four principle gems used are:
 
-* selenium-webdriver 3.4.0
-* cucumber 2.4.0
-* gherkin 4.1.1
-* rspec 3.5.4
+* selenium-webdriver 3.142.3
+* cucumber cucumber 2.2.0
+* gherkin 6.0.17
+* rspec-expectations 3.8.4
 
 <br>
+
 ---
 <br>
 
@@ -108,6 +128,7 @@ Feature: Simple load
 0m2.562s
 ```
 <br>
+
 ---
 <br>
 
@@ -123,6 +144,7 @@ cucumber --tags @Home
 ```
 
 <br>
+
 ---
 <br>
 
