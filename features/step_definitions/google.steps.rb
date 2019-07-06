@@ -8,6 +8,5 @@ And(/^I click the correct result$/) do
 end
 
 Then(/^I will be directed to the home page$/) do
-  expect(App.home.title.displayed?).to eq true
-  expect(App.home.title.text).to eq "Welcome to Citizens Advice"
+  expect(App.home.content.text).to include "Welcome to Citizens Advice"
 end
