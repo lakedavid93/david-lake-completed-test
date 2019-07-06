@@ -8,4 +8,12 @@ class HomePage < GenericPage
     @driver.find_element(:id, "main-nav")
   end
 
+  def popup
+  	@driver.find_element(:class, "home-extent-popup__dialog")
+  end
+
+  def popup_options
+  	popup.find_element(:class, "home-extent-popup__options")
+  end
+
 end
