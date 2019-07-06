@@ -1,3 +1,4 @@
+@GoogleSearch
 Feature: Google Search
 
   Scenario: Navigate to home page

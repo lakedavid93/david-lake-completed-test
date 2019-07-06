@@ -1,4 +1,4 @@
-@home
+@Home
 Feature: Home Page
 
   Background:
@@ -11,4 +11,4 @@ Feature: Home Page
   Scenario: Search
   	When I search for "Pension"
   	And I click "State Pension" in search results
-  	Then I will be directed to state pension page
+  	Then I will be directed to the state pension page

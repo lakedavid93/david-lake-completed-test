@@ -9,8 +9,6 @@
  * [Investigating Failed Scenarios](#investigating-failed-scenarios)
  
 <br>
-
----
 <br>
 
 <a name="getting-setup"></a>
@@ -99,8 +97,6 @@ The four principle gems used are:
 * rspec-expectations 3.8.4
 
 <br>
-
----
 <br>
 
 <a name="running-tests"></a>
@@ -128,8 +124,6 @@ Feature: Simple load
 0m2.562s
 ```
 <br>
-
----
 <br>
 
 <a name="running-specific-tests"></a>
@@ -144,8 +138,6 @@ cucumber --tags @Home
 ```
 
 <br>
-
----
 <br>
 
 <a name="investigating-failed-scenarios"></a>

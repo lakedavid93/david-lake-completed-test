@@ -1,3 +1,6 @@
+# Super class that holds methods common across all pages
+# All other page classes inherit this class
+
 class GenericPage
 
   def initialize(driver)
@@ -18,7 +21,7 @@ class GenericPage
     container.find_element(:tag_name, "h1").text
   end
 
-  def content
+  def content 
     @driver.find_element(:id, "main")
   end
 

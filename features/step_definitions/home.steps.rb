@@ -11,14 +11,17 @@ Then(/^I should see the main navigation$/) do
 end
 
 Then(/^the navigation should have correct options$/) do
-  options = [
+  # List what the menu items should be
+  expected_items = [ 
     "Benefits", "Work", "Debt and money", 
     "Consumer", "Housing", "Family", "Law and courts", 
     "Immigration", "Health", "More from us"
   ]
+  # For each item in the main nav 
+  # check it corresponds to the expected array
   App.home.nav_items.each_with_index do |item,i|
     text = item.find_element(:tag_name, "a").text
-    expect(text).to eq options[i]
+    expect(text).to eq expected_items[i]
   end
 end
 
@@ -32,6 +35,6 @@ When(/^I click "(.+)" in search results$/) do |choice|
   link.click
 end
 
-Then(/^I will be directed to state pension page$/) do
+Then(/^I will be directed to the state pension page$/) do
   expect(App.generic.page_title).to eq "State Pension"
 end
