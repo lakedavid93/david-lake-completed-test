@@ -13,4 +13,13 @@ class GenericPage
     end
   end
 
+  def page_title
+    container = @driver.find_element(:class, "title")
+    container.find_element(:tag_name, "h1").text
+  end
+
+  def content
+    @driver.find_element(:id, "main")
+  end
+
 end

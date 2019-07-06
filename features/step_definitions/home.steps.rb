@@ -21,3 +21,17 @@ Then(/^the navigation should have correct options$/) do
     expect(text).to eq options[i]
   end
 end
+
+When(/^I search for "(.+)"$/) do |text|
+  App.home.search_for(text)
+end
+
+When(/^I click "(.+)" in search results$/) do |choice|
+  link = App.search.results.find_element(:link, choice)
+  link.location_once_scrolled_into_view
+  link.click
+end
+
+Then(/^I will be directed to state pension page$/) do
+  expect(App.generic.page_title).to eq "State Pension"
+end
