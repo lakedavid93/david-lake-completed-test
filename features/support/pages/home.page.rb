@@ -16,6 +16,10 @@ class HomePage < GenericPage
     @driver.find_element(:id, "main-nav")
   end
 
+  def nav_items
+    nav_bar.find_elements(:class, "top-item")
+  end
+
   def content
   	@driver.find_element(:id, "main")
   end

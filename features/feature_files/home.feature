@@ -1,5 +1,9 @@
+@home
 Feature: Home Page
 
-  Scenario: Navigate to home page
-    Given I navigate to home page
+  Background:
+  	Given I navigate to the home page
+
+  Scenario: Verify Navigation Items
     Then I should see the main navigation
+    And the navigation should have correct options
